@@ -4,7 +4,7 @@ This example serverless application creates a custom resource that returns a tim
 
 ## Using the app
 
-Since the app is intended to show an example of how custom resources can be shared via SAR and used within a SAM template via nested apps, here is an example SAM template that nests the app and stores the output timestamp in an SSM parameter:
+Since the app is intended to show an example of how custom resources can be shared via SAR and used within a SAM template via nested apps, the app can be found in SAR [here](https://serverlessrepo.aws.amazon.com/#/applications/arn:aws:serverlessrepo:us-east-1:277187709615:applications~timestamp-custom-resource). Here is an example SAM template that nests the app and stores the output timestamp in an SSM parameter:
 
 ```yaml
 AWSTemplateFormatVersion: '2010-09-09'
