@@ -4,7 +4,7 @@ Transform: AWS::Serverless-2016-10-31
 Metadata:
   AWS::ServerlessRepo::Application:
     Name: timestamp-custom-resource
-    Description: Example serverless application containing a custom resource that returns a timestamp.
+    Description: This example serverless application creates a custom resource that returns a timestamp as an ISO 8601 string.
     Author: James Hood
     SpdxLicenseId: MIT
     # paths are relative to .aws-sam/build directory

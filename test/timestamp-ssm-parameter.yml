@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  Timestamp:
+    Type: AWS::Serverless::Application
+    Properties:
+      Location:
+        ApplicationId: arn:aws:serverlessrepo:us-east-1:277187709615:applications/timestamp-custom-resource
+        SemanticVersion: 0.0.1
+      
+  TimestampParameter:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: /timestamp-custom-resource/timestamp
+      Type: String
+      Value: !GetAtt Timestamp.Outputs.Timestamp
